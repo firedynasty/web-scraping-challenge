@@ -10,6 +10,9 @@ dogs = [{"name": "Fido", "type": "Lab"},
         {"name": "Suzzy", "type": "Terrier"},
         {"name": "Tomato", "type": "Retriever"}]
 
+
+image_url = {'url':'https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA18182_ip.jpg'}
+
 image_files1 = [{'title': 'Valles Marineris',
   'img_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg'},
  {'title': 'Cerberus Hemisphere',
@@ -25,7 +28,7 @@ image_files2 = [{'title': 'Schiaparelli Hemisphere', 'img_url': 'https://astrope
 @app.route("/")
 def index():
 
-    return render_template("index.html", image_files=image_files)
+    return render_template("index.html", image_url=image_url)
 
 @app.route("/images")
 def second_page_images():
