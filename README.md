@@ -18,7 +18,7 @@ Flask and Pymongo were used in combination to build the two webpages that got th
 
 See Directory: [/Missions_to_mars/Mongo_Flask_App_V2](https://github.com/firedynasty/web-scraping-challenge/tree/main/Missions_to_Mars/Mongo_Flask_App_V2)
 
-The same image page gets rendered, however the dictionary was not split into two from the first webscraping [exercise](https://github.com/firedynasty/web-scraping-challenge/blob/main/Missions_to_Mars/mission_to_mars.ipynb)
+The same image page gets rendered, however the dictionary was not split into two from the first webscraping [exercise](https://github.com/firedynasty/web-scraping-challenge/blob/main/Missions_to_Mars/mission_to_mars.ipynb).
 
 A nested list is created and then a nested for loop was created to read into a table with two columns.
 
