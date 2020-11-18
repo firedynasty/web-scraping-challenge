@@ -1,0 +1,18 @@
+<table class="table">
+    <tr>
+    {% for image_file in image_files2 %}
+      <td>
+      <figure class="figure">
+    <img class="img-thumbnail" src="{{ image_file.img_url }}" alt="...">
+    <figcaption class="figure-caption"><b>{{ image_file.title }}</b></figure>
+    </td>
+    {% endfor %}
+  </tr>
+
+
+I feel that I can make one <tr> 
+
+	and to loop through more images
+
+	So that I can do for image_file1, image_file2 in another function
+

@@ -1,0 +1,30 @@
+https://stackoverflow.com/questions/16458340/python-equivalent-of-zip-for-dictionaries/16458448
+
+
+If I have these two lists:
+
+>>>la = [1, 2, 3]
+>>>lb = [4, 5, 6]
+I can iterate over them as follows:
+
+>>>for i in range(min(len(la), len(lb))):
+    print la[i], lb[i]
+Or more pythonically
+
+>>>for a, b in zip(la, lb):
+    print a, b
+
+
+
+https://stackoverflow.com/questions/52618581/looping-thru-a-python-list-and-display-results-in-flask
+
+{% for keys,keys2 in result1 %}
+<tr class="even"><td>{{keys}}</td><td>{{keys2}}</td></tr>
+
+ {% endfor %}
+
+
+ looping through a list from flask
+
+ 
+

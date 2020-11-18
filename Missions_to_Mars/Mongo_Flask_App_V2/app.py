@@ -28,6 +28,17 @@ image_files = [{'title': 'Valles Marineris',
  {'title': 'Syrtis Major',
   'img_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg'}]
 
+image_matrix = []
+count = 0
+for i in range(int(len(image_files)/2)):
+  image_matrix.append([])
+ 
+count1 = 0
+for i in range(int(len(image_files)/2)):
+  image_matrix[i].append(image_files[count1])
+  image_matrix[i].append(image_files[count1 + 1])
+  count1 = count1 + 2
+
 
 value_list = []
 key_list = []
@@ -51,10 +62,10 @@ def scrape():
 
 @app.route("/images")
 def second_page_images():
+ 
 
 
-
-    return render_template("images.html", image_files1=image_files1, image_files2=image_files2, )
+  return render_template("images.html", list=image_matrix, )
 
 
 
